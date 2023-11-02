@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>밴드동아리 "태조산" 소개</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="../asdasdasd\img\logo.jpg" alt="밴드동아리 로고" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">메인페이지</a></li>
+          <li><a href="intro.html">동아리 소개</a></li>
+          <li><a href="support.html">지원하기</a></li>
+          <li><a href="movie.html">공연영상</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="support-container">
+        <div class="image-container">
+          <img
+            src="../asdasdasd\img\teajo.png"
+            alt="지원 이미지"
+            width="600"
+            height="800"
+          />
+        </div>
+        <div class="form-container">
+          <h1>지원하기</h1>
+          <form action="#" method="post" id="support-form">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <label>성별:</label>
+            <input type="radio" id="male" name="gender" value="남" />
+            <label for="male">남</label>
+            <input type="radio" id="female" name="gender" value="여" />
+            <label for="female">여</label>
+            <br />
+            <label for="phone">전화번호:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <br />
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="message">지원세션(베이스강추)</label><br />
+            <textarea
+              id="message"
+              name="message"
+              cols="60"
+              rows="1"
+              required
+            ></textarea>
+            <br />
+            <label for="message">좋아하는 음악장르나, 좋아하는 밴드</label
+            ><br />
+            <textarea
+              id="message"
+              name="message"
+              cols="60"
+              rows="4"
+              required
+            ></textarea>
+            <br />
+            <label for="motivation">지원동기</label><br />
+            <textarea
+              id="motivation"
+              name="motivation"
+              rows="4"
+              cols="60"
+              required
+            ></textarea
+            ><br />
+            <button type="submit" id="submit-button">제출</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        const submitButton = document.getElementById("submit-button");
+
+        submitButton.addEventListener("click", function () {
+          // 경고창 표시
+          alert("제출이 완료되었습니다.");
+        });
+      </script>
+    </main>
+    <footer>
+      <footer class="footer-style">
+        <div class="center-text3">
+          <p>&copy; 2023 밴드동아리 "태조산"</p>
+        </div>
+      </footer>
+    </footer>
+  </body>
+</html>
